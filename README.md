@@ -11,4 +11,4 @@ Check **[it](http://tokenjan.github.io/)** out.
 - Others
 
 ## Theme
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+**[Moon](https://github.com/TaylanTatli/Moon)** is a minimal, one column jekyll theme.
