@@ -10,15 +10,7 @@ tag:
 Question: There are 10 stairs, a person standing at the bottom wants to reach the top. The person can climb either 1 stair or 2 stairs at a time. Count the number of ways, the person can reach the top.
 
 ![10 stairs problem(1)](https://github.com/TokenJan/TokenJan.github.io/blob/master/assets/img/dp_problem(1).jpg?raw=true)
-{: .image-left}
-
-
-![10 stairs problem(2)](https://github.com/TokenJan/TokenJan.github.io/blob/master/assets/img/dp_problem(2).jpg?raw=true)
 {: .image-center}
-
-
-![10 stairs problem(3)](https://github.com/TokenJan/TokenJan.github.io/blob/master/assets/img/dp_problem(3).jpg?raw=true)
-{: .image-right}
 
 ## recursion version
 Since the number of ways to reach the \\(10^{th}\\) is the sum of the number of ways to reach the \\(9^{th}\\) and the \\(8^{th}\\). That is `F(10) = F(9) + F(8)`, and it is known that `F(1) = 1` and `F(2) = 2`. So we can use a recursion to solve this problem.
