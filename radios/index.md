@@ -1,7 +1,7 @@
 ---
 layout: radio
-title: Love Radio
+title: Love Radio 103.7
 excerpt: "My favorite radios"
 comments: false
 ---
-## 2017.06.10
+## 康定小情歌

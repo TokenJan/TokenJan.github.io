@@ -10,42 +10,97 @@ feature: http://i.imgur.com/Ds6S7lJ.png
 <head>
     {% include head.html %}
 
-    <script src="{{ site.url }}/assets/js/mediaelement-4.1.3/build/jquery.js"></script>
-    <script src="{{ site.url }}/assets/js/mediaelement-4.1.3/build/mediaelement-and-player.min.js"></script>
-    <!-- <script src="{{ site.url }}/assets/js/mep-feature-playlist-master/mep-feature-playlist.js"></script> -->
+    <script type="text/javascript" src="{{ site.url }}/assets/js/mediaelement-2.13.1/build/mediaelement-and-player.min.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/assets/js/mep-feature-playlist-master/mep-feature-playlist.js"></script>
 
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/mediaelementplayer.min.css">
-    <!-- <link rel="stylesheet" href="{{ site.url }}/assets/js/mep-feature-playlist-master/mep-feature-playlist.css"> -->
-    
+    <link type="text/css" rel="stylesheet" href="{{ site.url }}/assets/css/mediaelementplayer.css" />
     <style>
-        .mejs__overlay-button {
-            background-image: url("{{ site.url }}/assets/js/mediaelement-4.1.3/build/mejs-controls.svg");
+        /* Start: Show/Hide Playlist*/
+        .mejs-controls .mejs-show-playlist button {
+            background: transparent url("{{site.url}}/assets/img/controls-playlist.png") no-repeat;
+            background-position: -16px -16px;
         }
-        .mejs__overlay-loading-bg-img {
-            background-image: url("{{ site.url }}/assets/js/mediaelement-4.1.3/build/mejs-controls.svg");
+
+        .mejs-controls .mejs-hide-playlist button {
+            background: transparent url("{{site.url}}/assets/img/controls-playlist.png") no-repeat;
+            background-position: -16px 0;
         }
-        .mejs__button > button {
-            background-image: url("{{ site.url }}/assets/js/mediaelement-4.1.3/build/mejs-controls.svg");
+        /* End: Show/Hide Playlist */
+
+        /* Start: Previous */
+        .mejs-controls .mejs-prevtrack button {
+            background: transparent url("{{site.url}}/assets/img/controls-playlist.png") no-repeat;
+            background-position: 0 -16px;
+        }
+        /* End: Previous */
+
+        /* Start: Next */
+        .mejs-controls .mejs-nexttrack button {
+            background: transparent url("{{site.url}}/assets/img/controls-playlist.png") no-repeat;
+        }
+        /* End: Next */
+
+        /* Start: Shuffle */
+        .mejs-controls .mejs-shuffle-on button {
+            background: transparent url("{{site.url}}/assets/img/controls-playlist.png") no-repeat;
+            background-position: -32px 0;
+        }
+        .mejs-controls .mejs-shuffle-off button {
+            background: transparent url("{{site.url}}/assets/img/controls-playlist.png") no-repeat;
+            background-position: -32px -16px;
+        }
+        /* End: Shuffle */
+
+        /*Start: Playlist*/
+        .mejs-playlist {
+            position: absolute;
+            left: 0;
+            height: 200px !important;
+            overflow-y: auto;
+            background: #000000;
+            opacity: 0.8;
+        }
+        .mejs-playlist ul {
+            margin: 0;
+            padding: 5px;
+        }
+        .mejs-playlist li {
+            color: white;
+            font-size: 11px;
+            height: 16px;
+            overflow: hidden;
+            margin: 2px;
+            cursor: pointer;
+        }
+        .mejs-playlist li:hover {
+            color: #a8a8a8;
+        }
+        .mejs-playlist li.current {
+            color: white;
+            font-weight: bold;
         }
 
         #mediawrapper{
-            margin-left: 0px;
-            margin-right:auto;
-            margin-top:30px;
-            width:430px;
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            padding: 10px;
+            bottom: 0px;
+            width: 430px;
         }
     </style>
     <script>
         $(function(){
             $('video,audio').mediaelementplayer({
-             loop: true,
-             shuffle: true,
-             playlist: true,
-             audioHeight: 30,
-             playlistposition: 'bottom',
-             features: ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'playlist', 'current', 'progress', 'duration', 'volume'],
-             keyActions: []
-         });
+               loop: true,
+               shuffle: true,
+               playlist: true,
+               audioHeight: 30,
+               playlistposition: 'top',
+               features: ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'playlist', 'current', 'progress', 'duration', 'volume'],
+               keyActions: []
+           });
         });
     </script>
     <style>
@@ -66,15 +121,15 @@ feature: http://i.imgur.com/Ds6S7lJ.png
                 </div>
 
                 {{ content }}
-                <div id="mediawrapper">
-                    <audio class="mejs__player" controls="controls" preload="none">
-                        <source src="{{site.url}}/assets/media/103.7/103.7_20170610.aac" type="audio/mpeg"/>
-                    </audio>
-                </div> 
             </div>
         </div>
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
     </header>
+    <div id="mediawrapper">
+        <audio id="mejs" type="audio/mpeg" controls="controls" preload="true">
+            <Source src="{{site.url}}/assets/media/103.7/103.7_20170610.aac" title="2017.06.10"></Source> 
+        </audio>
+    </div> 
     {% include scripts.html %}
     {% if site.mathjax == true %}
     <!-- MathJax -->
