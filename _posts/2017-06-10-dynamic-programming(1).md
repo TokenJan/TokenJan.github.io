@@ -29,21 +29,28 @@ def recursion (num):
         return 1
     else:
         print("please input a positive number.")
-
 ```
 
-## iterative version
+## recursion with reminder version
 However, the time and space complexity of recursion method are \\(O\(n^{2}\)\\), which can be optimized to __linear__ complexity with iterative version.
 ```python
-# iterative version
+# recursion with reminder version
 # time complexity: O(n) --- 2.09808349609e-05 seconds ---
-# space complexity: O(n)
-def iterative (num):
-    results = [1,2]
-    for i in range(num-2):
-        results.append(results[i]+results[i+1])
-    return results[num-1]
-
+# space complexity: O(1)
+def recursion_reminder (num):
+    if (num > 2):
+        if (num in reminder):
+            return reminder.get(num)
+        else:
+            value = recursion_reminder(num-1) + recursion_reminder(num-2)
+            reminder[num] = value
+            return value
+    elif (num == 2):
+        return 2
+    elif (num == 1):
+        return 1
+    else:
+        print("please input a positive number.")
 ```
 
 ## dynamic programming version
