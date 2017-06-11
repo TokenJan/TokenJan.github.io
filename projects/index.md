@@ -1,6 +1,6 @@
 ---
 layout: project
-title: What I can do with a Raspberry Pi 3?
+title: What can I do with a Raspberry Pi 3?
 excerpt: "A List of Projects"
 comments: false
 ---
