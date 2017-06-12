@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "what is dynamic programming? (1)"
+title:  "10 steps problem? (1)"
 date:   2017-06-10
 feature: http://i.imgur.com/Ds6S7lJ.png
 tag:
