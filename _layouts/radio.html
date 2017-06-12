@@ -83,7 +83,6 @@ feature: http://i.imgur.com/Ds6S7lJ.png
         #mediawrapper{
             position: fixed;
             left: 0px;
-            right: 0px;
             margin: auto;
             padding: 10px;
             bottom: 0px;
@@ -93,13 +92,12 @@ feature: http://i.imgur.com/Ds6S7lJ.png
     <script>
         $(function(){
             $('video,audio').mediaelementplayer({
-               loop: true,
-               shuffle: true,
+               loop: false,
+               shuffle: false,
                playlist: true,
                audioHeight: 30,
                playlistposition: 'top',
-               features: ['playlistfeature', 'prevtrack', 'playpause', 'nexttrack', 'loop', 'shuffle', 'playlist', 'current', 'progress', 'duration', 'volume'],
-               keyActions: []
+               features: ['playlistfeature', 'playpause', 'playlist', 'current', 'progress', 'duration', 'volume']
            });
         });
     </script>
