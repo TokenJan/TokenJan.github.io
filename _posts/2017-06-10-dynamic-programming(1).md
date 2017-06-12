@@ -2,7 +2,7 @@
 layout: post
 title:  "10 steps problem"
 date:   2017-06-10
-feature: http://i.imgur.com/Ds6S7lJ.png
+feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/f0ec3c49535589.58b77ea8a64b4.jpg
 tag:
 - algorithm
 - dynamic programming
