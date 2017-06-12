@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "10 steps problem? (1)"
+title:  "10 steps problem"
 date:   2017-06-10
 feature: http://i.imgur.com/Ds6S7lJ.png
 tag:
