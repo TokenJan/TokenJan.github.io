@@ -32,7 +32,7 @@ def recursion (num):
 ```
 
 ## recursion with reminder version
-However, the time and space complexity of recursion method are \\(O\(n^{2}\)\\), which can be optimized to __linear__ complexity with recursion with reminder version.
+However, the time and space complexity of recursion method are \\(O\(n^{2}\)\\), which can be optimized to __linear__ complexity with iterative version.
 ```python
 # recursion with reminder version
 # time complexity: O(n) --- 2.09808349609e-05 seconds ---
