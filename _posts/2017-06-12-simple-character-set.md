@@ -2,7 +2,7 @@
 layout: post
 title:  "simple character set"
 date:   2017-06-12
-feature: http://i.imgur.com/Ds6S7lJ.png
+feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/44ccf349535589.58b77ea8a4467.jpg
 tag:
 - algorithm
 - string
