@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: Coding World
+title: Posts
 excerpt: "A List of Posts"
 comments: false
 ---
