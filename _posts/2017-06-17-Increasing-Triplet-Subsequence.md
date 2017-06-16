@@ -20,43 +20,22 @@ return `true`<br/>
 Given `[5, 4, 3, 2, 1]`,<br/>
 return `false`
 
-### First thought solution
-This solution is intuitive but not elegant and difficult to understand.
+### Solution
+Only record the first and second smallest number.
 ```python
     def increasingTriplet(self, nums):
         """
         :type nums: List[int]
         :rtype: bool
         """
-        seq = []
+        g1, g2 = float('inf'), float('inf')
+        
         for num in nums:
-            if len(seq) == 0:
-                seq.append(num)
-            elif len(seq) == 1:
-                if num <= seq[0]:
-                    seq[0] = num
-                else:
-                    seq.append(num)
-            elif len(seq) == 2:
-                if num < seq[0]:
-                    seq.append(num)
-                elif seq[0] <= num and seq[1] >= num:
-                    seq.append(num)
-                else:
-                    return True
-            elif len(seq) == 3:
-                if seq[2] <= seq[0]:
-                    if num > seq[1]:
-                        return True
-                    elif num > seq[2] and num < seq[1]:
-                        seq.append(num)
-                        del seq[0:1]
-                    elif num < seq[2]:
-                        seq[2] = num
-                else:
-                    if num > seq[2]:
-                        return True
-                    else:
-                        seq[2] = num
+            if num <= g1:
+                g1 = num
+            elif num <= g2:
+                g2 = num
+            else:
+                return True
         return False
 ```
