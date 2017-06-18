@@ -7,14 +7,16 @@ tag:
 - algorithm
 - string
 ---
-Question: Input a string, output a set of the included characters.
+### Question: 
+Input a string, output a set of the included characters.
 - Input: the string is up to 100 length, only include letters, cannot be empty and case sensitive.
 - Output: keep the original order of the characters.
 
-Example:
+### Example:
 - Input: `abcqweracb`
 - Output: `abcqwer`
 
+### Solution:
 Since we use a new string to record the result, the space complexity is __\\(O\(n\)\\)__
 ```python
 # use a new string and check character one by one

@@ -6,21 +6,21 @@ feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/35ced149535589.5
 tag:
 - algorithm
 - leetcode
+- medium
 ---
-Question: Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
+### Question:
+Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
 Formally the function should:
 >### Return true if there exists i, j, k 
 >### such that arr[i] < arr[j] < arr[k] given 0 ≤ i < j < k ≤ n-1 else return false.
 
 Your algorithm should run in \\(O\(n\)\\) time complexity and \\(O\(1\)\\) space complexity.
 
-__Examples:__<br/>
-Given `[1, 2, 3, 4, 5]`,<br/>
-return `true`<br/>
-Given `[5, 4, 3, 2, 1]`,<br/>
-return `false`
+### Examples:
+- Given `[1, 2, 3, 4, 5]`, return `true`
+- Given `[5, 4, 3, 2, 1]`, return `false`
 
-### Solution
+### Solution:
 Only record the first and second smallest number.
 ```python
     def increasingTriplet(self, nums):
