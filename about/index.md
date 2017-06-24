@@ -6,16 +6,16 @@ date: 2016-06-07
 comments: false
 ---
     
-<center>Hey guys, this is Jan. This blog records some coding techniques and what I see about the world.</center>
+Hey guys, this is Jan. This blog records some coding techniques and what I see about the world.
 
-## Coding World
+## Posts
 - Algorithm
-- Nodejs
+- Ramble
 
-## Photography
-- Stuttgart
+## Day Dream
+- 103.7 love radio
 
-## Radios
-- Love Radio 103.7
+## Projects
+- Raspberry Pi 3 Model B
 
 ## To be continued...
