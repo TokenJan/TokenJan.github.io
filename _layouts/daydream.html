@@ -92,9 +92,9 @@ feature: http://i.imgur.com/Ds6S7lJ.png
 			$('video,audio').mediaelementplayer({
 				loop: false,
 				shuffle: false,
-				playlist: true,
+				playlist: false,
 				audioHeight: 30,
-				playlistposition: 'top',
+				playlistposition: 'bottom',
 				features: ['playlistfeature', 'playpause', 'playlist', 'current', 'progress', 'duration', 'volume']
 			});
 		});
@@ -116,7 +116,7 @@ feature: http://i.imgur.com/Ds6S7lJ.png
 					</a>
 				</div>
 
-				{{ content }}
+				<center>{{ content }}</center>
 				<div id="mediawrapper">
 					<audio id="mejs" type="audio/mpeg" controls="controls" preload="true">
 						<Source src="{{site.url}}/assets/media/103.7/103.7_20170624.aac" title="2017.06.24"></Source>
