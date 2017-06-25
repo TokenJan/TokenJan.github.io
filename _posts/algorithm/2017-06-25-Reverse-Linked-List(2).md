@@ -47,7 +47,7 @@ def reverseBetween(self, head, m, n):
     start = pre.next 		# a pointer to the beginning of a sub-list that will be reversed
     then = start.next 		# a pointer to a node that will be reversed
 
-    # 1 - 2 -3 - 4 - 5 ; m=2; n =4 ---> pre = 1, start = 2, then = 3
+    # 1 - 2 -3 - 4 - 5 ; m = 2; n = 4 ---> pre = 1, start = 2, then = 3
     # dummy-> 1 -> 2 -> 3 -> 4 -> 5
     
     for j in range(n-m):
