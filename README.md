@@ -1,12 +1,12 @@
 # Welcome To My Jungle
-All about me.
+About me.
 
 ## Demo
 Check **[it](http://tokenjan.github.io/)** out.
 
 ## Content
-- Coding
-- Photography
+- Algorithm
+- Rambles and daydream
 
 ## Theme
 **[Moon](https://github.com/TaylanTatli/Moon)** is a minimal, one column jekyll theme.
