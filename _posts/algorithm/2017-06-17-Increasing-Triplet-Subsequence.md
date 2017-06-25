@@ -5,7 +5,6 @@ date:   2017-06-16
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/35ced149535589.58b77ea8a4cbd.jpg
 categories: algorithm
 tag:
-- algorithm
 - leetcode
 - medium
 ---

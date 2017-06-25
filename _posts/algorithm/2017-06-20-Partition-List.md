@@ -5,7 +5,6 @@ date:   2017-06-20
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/0a317c49535589.58b77ea8a560e.jpg
 categories: algorithm
 tag:
-- algorithm
 - leetcode
 - linked list
 - two pointers

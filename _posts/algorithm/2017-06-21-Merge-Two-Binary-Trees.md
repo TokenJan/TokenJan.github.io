@@ -5,7 +5,6 @@ date:   2017-06-21
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/4acf6d49535589.58ba166420a53.jpg
 categories: algorithm
 tag:
-- algorithm
 - leetcode
 - binary tree
 - recursion

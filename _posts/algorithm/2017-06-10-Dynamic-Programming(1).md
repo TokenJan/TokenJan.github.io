@@ -5,7 +5,6 @@ date:   2017-06-10
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/f0ec3c49535589.58b77ea8a64b4.jpg
 categories: algorithm
 tag:
-- algorithm
 - dynamic programming
 ---
 

@@ -5,7 +5,6 @@ date:   2017-06-12
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/44ccf349535589.58b77ea8a4467.jpg
 categories: algorithm
 tag:
-- algorithm
 - string
 ---
 ### Question: 
