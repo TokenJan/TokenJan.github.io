@@ -6,7 +6,8 @@ Check **[it](http://tokenjan.github.io/)** out.
 
 ## Content
 - Algorithm
-- Rambles and daydream
+- Daydream
+- Love Radio
 
 ## Theme
 **[Moon](https://github.com/TaylanTatli/Moon)** is a minimal, one column jekyll theme.
