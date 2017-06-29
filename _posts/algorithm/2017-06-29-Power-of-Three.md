@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Complex Number Multiplication"
+title:  "Power of three"
 date:   2017-06-29
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fcb49853396079.5932e355d399c.jpg
 categories: algorithm
