@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Binary Tree Inorder Traversal"
+title:  "Inverse Binary Tree"
 date:   2017-07-05
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/15fde053396079.5932e355d49b6.jpg
 categories: algorithm
@@ -11,6 +11,7 @@ tag:
 ---
 ### Question:
 Invert a binary tree.
+
 ```
      4
    /   \
