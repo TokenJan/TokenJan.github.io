@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Binary Tree Inorder Traversal"
-date:   2017-07-01
+date:   2017-07-03
 feature: https://mir-s3-cdn-cf.behance.net/project_modules/1400/9ac30253396079.5932e355d30b9.jpg
 categories: algorithm
 tag:
