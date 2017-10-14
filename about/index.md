@@ -10,12 +10,6 @@ Hey guys, this is Jan. This blog records some coding techniques and what I see a
 
 ## Posts
 - Algorithm
-- Ramble
-
-## Day Dream
-- 103.7 love radio
-
-## Projects
-- Raspberry Pi 3 Model B
+- Daydream
 
 ## To be continued...
